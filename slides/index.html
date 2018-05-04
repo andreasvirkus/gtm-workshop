@@ -41,28 +41,76 @@
 			<div class="slides">
         <section>
           <h1><code>GTM & GA</code></h1>
-          <h3>👁️ 🌊 you!</h3>
+          <h3>👁️ 🌊 you</h3>
           <br><br>
-          <p>andreas johan virkus, 2018</p>
+          <p>andreas johan virkus</p>
+          <p><em>2018</em></p>
         </section>
 
-				<section>
-          <h2>Tracking</h2>
+        <section>
+          <section>
+            <h2>Tracking</h2>
 
-					<aside class="notes">
-            Helps you use data to your advantage to make well-formed
-            decisions.
+            <aside class="notes">
+              Helps you use data to your advantage to make well-formed
+              decisions.
 
-            <ul>
-              <li>Campaign tracking refers to a method of identifying
-                  how users discover your site.</li>
-              <li>Event tracking - Events are user interactions with content that
-                can be tracked independently from a web page or a screen load.
-                Downloads, ad clicks, gadgets, AJAX embedded elements, video plays, etc.
-                are all examples of actions you might want to track as Events.</li>
-              <li>Flow tracking (conversion, bounce rate, etc.)</li>
-            </ul>
-          </aside>
+              <ul>
+                <li>Campaign tracking refers to a method of identifying
+                    how users discover your site.</li>
+                <li>Event tracking - Events are user interactions with content that
+                  can be tracked independently from a web page or a screen load.
+                  Downloads, ad clicks, gadgets, AJAX embedded elements, video plays, etc.
+                  are all examples of actions you might want to track as Events.</li>
+                <li>Flow tracking (conversion, bounce rate, etc.)</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>Google Tag Manager</h2>
+
+            <aside class="notes">
+              <p>GTM is a free tool, allowing marketers to implement
+                and make tracking changes without the need of dev-interference.
+              </p>
+              <p>It used to be about devs manually/hard-coding tags or snippets
+                of code per trackable event/element.
+              </p>
+              <p>When you use a 3rd-party tracking program to collect information,
+                such as Google Analytics, each program requires its own individual
+                code. If you have a webpage that tracks information using three
+                different programs, you would need three separate codes on each
+                page of that site. With Google Tag Manager, you’re given one standardized
+                code to place on your web page. All programs can then be deployed
+                through that one GTM code and managed behind the scenes on a simple
+                dashboard.</p>
+              <p>As the needs of your website change, new programs and program
+                updates can be made through the Google Tag Manager dashboard,
+                without ever having to dive into the code on the web pages themselves.
+              </p>
+
+              <p>Another benefit of Google Tag Manager is that it allows you to
+                test and debug any changes that you make before posting the changes
+                live on your website. After the changes have been tested and
+                perfected, Google Tag Manager makes it possible to implement all
+                changes at the same time, ensuring efficient, more exact, and immediate
+                tracking capabilities, ultimately giving you clean data.</p>
+              <p>You also get version control, since you can name/tag your releases
+                and publish a previous one</p>
+            </aside>
+          </section>
+
+          <section>
+            <h2>
+              Google Analytics
+            </h2>
+
+            <aside class="notes">
+              GA is a freemium web analytics service that helps
+              track and report website/-app traffic. Integrates well with GTM
+            </aside>
+          </section>
         </section>
 
 				<section>
@@ -86,134 +134,153 @@
           <section>
             <h2>Accounts</h2>
 
-            <aside></aside>
+            <aside class="notes">
+              <p>Top-level component of GTM, typically 1 account
+              is needed per company.</p>
+              <p>Accounts can include a company or organization
+                with lots of websites (such as a retail chain with
+                different websites for each location), down to a
+                small local company with only one site.</p>
+              <p>GA existing account works for GTM, but you don't
+                actually need GA to use GTM (Keen.io).
+              </p>
+            </aside>
           </section>
           <section>
             <h2>Containers</h2>
 
-            <aside></aside>
+            <aside class="notes">
+              <p>Containers hold all the tags for a specific website
+                or mobile application. If you only have one website,
+                you’ll only need one container. If you have multiple
+                related websites (such as various retail locations),
+                you can create different containers for each.</p>
+              <p>Containers are the most important function of Google
+                Tag Manager. They are the bucket where all your tags
+                live. Containers keep all your important tags and
+                programs in one organized container; allowing you
+                to manage, configure, and deploy your programs and
+                tags through one platform. Containers hold everything
+                for a website. This is the function that allows you
+                to run all of these on one platform, providing accessibility,
+                convenience, and cost-effective tag management.</p>
+              <p>You can label your containers and its usually a good
+                practise to label them after the website/app it represents.</p>
+            </aside>
           </section>
           <section>
             <h2>Folders</h2>
 
-            <aside></aside>
+            <aside class="notes">
+              <p>As containers grow, they can fill up and make it difficult
+                to feel organized and keep track of all the jumbled components.
+                You can use folders to organize the contents of your
+                containers into groupings.</p>
+              <p>A folder is an especially great tool if you have different
+                teams working on different campaigns. You can label the
+                folders by teams (ex. marketing vs. sales), by type (ex.
+                Google Analytics tags vs. AdWords tags), or by project
+                (ex. new ad campaign, retargeting campaign). The capabilities
+                of Google Tag Manager are vast, and folders can help you stay
+                organized as you build your containers.</p>
+            </aside>
           </section>
           <section>
             <h2>tags</h2>
 
-            <aside></aside>
+            <aside class="notes">
+              <p>The goal of a tag is to give marketers a better understanding
+                of what visitors are doing on their website. In order to track
+                activity, you need a snippet of code on every page of your website.
+                This section of code that allows for information tracking is called
+                a tag. When a tag gets added to a web page, it permits tracking
+                on that page, enabling data collection and reporting. Based on
+                a user’s commands, a tag can tell you specific, detailed information
+                about performance on that page.</p>
+              <p>Tags can track all types of information about a web page, such
+                as conversions, traffic, button clicks, or other metrics needed
+                to optimize online performance. They also enable detailed tracking,
+                analyzing, and reporting, giving marketers real data on which to
+                base their marketing decisions.</p>
+              <p>Tag use cases:</p>
+              <ul>
+                <li>For retargeting after a visitor performs a defined action
+                  (like landing on a loan page).</li>
+                <li>To know what page a visitor is on when they perform a specific
+                  action – like signing up for the newsletter or downloading something.</li>
+                <li>To gather detailed traffic information, such as visits to a particular webpage.</li>
+              </ul>
+              <p>Google provides templates for its programs, commonly sed tags and
+                third-party programs (also allowing you to create custom tags).
+              </p>
+              <p>Some common tags: google analytics, AdWords conversion tracking,
+                HotJar, FB, LinkedIn, Twitter...</p>
+            </aside>
           </section>
           <section>
             <h2>Triggers</h2>
 
-            <aside></aside>
+            <aside class="notes">
+              <p>When a trigger is attached to a tag, it tells the tag the
+                conditions that must be met for the tag to fire. When a tag
+                ‘fires’, it enables its respective 3rd party tracking program to
+                start tracking information. A tag must have at least one trigger
+                in order to fire at all.</p>
+              <p>Once you’ve added a tag, you will be able to set your tag
+                triggers. You’ll need to enter in a few details about the tag,
+                then you can set the triggers (or the ‘rules’) for that tag.</p>
+              <p>Example:: f a marketer wants a tag to fire when a visitor lands
+                on the homepage, they would set up a trigger for that homepage.
+                If the URL of the homepage ends in “/home” they would select URL
+                as the variable, “contains” as the operator, and enter “/home”
+                into the value.</p>
+            </aside>
           </section>
         </section>
 
 				<section>
-          <h2>The future</h2>
-
-          <h3>Endless ✨</h3>
-
-          <aside class="notes">
-            <p>But seriously. The extensibility that the plugin ecosystem creates, is
-              simply awe-some.</p>
-            <p>To list but a few already existing community plugins:</p>
-            <ul>
-              <li>Vuetify, Buefiy, Cordova, NativeScript and other major frameworks (including IC)</li>
-              <li>Docker</li>
-              <li>Apollo</li>
-              <li>Critical CSS</li>
-              <li>Express</li>
-              <li>Netlify Lambda</li>
-              <li>i18n</li>
-              <li>Nuxt</li>
-              <li>Electron</li>
-              <li>Storybook</li>
-              <li>Meta tags</li>
-            </ul>
-
-            <p>Bigbank plugins:</p>
-            <p>Interface Components, Express (logging, security headers, microservice controllers, middleware), docker, ?</p>
-          </aside>
-        </section>
-
-				<section>
           <section>
-            <h2>CLI</h2>
-
-            <img alt="End-result of package.json after running vue create" src="/code-examples/cli-scripts.png">
+            <h2>Data layer</h2>
 
             <aside class="notes">
-              All this is made possible through a magical vue-cli-service library,
-              that hides away the mess, yet let's you keep control of everything.
+              <p>Rather than referencing variables, transaction information,
+                page categories, and other important signals scattered throughout
+                your page, Google Tag Manager is designed to easily reference
+                information that you put in this data layer. However, explicitly
+                declaring the data layer is optional and if you choose not to
+                implement the data layer, you can still access values from the page
+                using the Variables feature, but you cannot use events without the
+                data layer. Implementing the data layer with variables and
+                associated values, as opposed to waiting for those variables to
+                load throughout the page, ensures that they will be available as
+                soon as you need them to fire tags.</p>
             </aside>
           </section>
 
           <section>
-            <h2>CLI commands</h2>
+            <h2>Setting up </h2>
 
-            <img alt="Available vue-cli commands" src="/code-examples/cli-commands.png">
-          </section>
-        </section>
+            <img alt="Initialising the Data Layer object" src="/code-examples/init-datalayer.png">
 
-        <section>
-          <section>
-            <h2><code>serve</code></h2>
-
-            <img alt="Serving a vue file with vue-cli-service serve" src="/code-examples/cli-serve.png">
-
-            <aside class="notes">
-              <p>The serve command is a powerful part of the vue-cli-service, allowing you to
-                serve even a single .vue file without any config or overhead of the project setup!</p>
-
-              <p>The drawback of vue serve is that it relies on globally installed dependencies which may
-                be inconsistent on different machines. Therefore this is only recommended for rapid prototyping.</p>
-            </aside>
+            <aside class="notes">Shouldn't be after the GTM snippet (otherwise no vars on page load)</aside>
           </section>
 
           <section>
-            <h2><code>build</code></h2>
-
-            <img alt="Building a web component with vue-cli-service build" src="/code-examples/cli-build.png">
-
-            <aside class="notes">
-              <p>vue-cli-service build command exposes multiple build targets like app, lib, wc, wc-async</p>
-            </aside>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h2>Plugins</h2>
-
-            <p>Service - Configs (Webpack), access to env variables, </p>
-            <p>Generator - Templates with <code>api.render()</code></p>
+            <h2>
+              Event
+            </h2>
 
             <aside class="notes">
-
-            </aside>
-          </section>
-        </section>
-
-				<section data-background-image="https://media0.giphy.com/media/pSFa0BLnR0Ov6/giphy.gif">
-					<h2>Demo time!</h2>
-        </section>
-
-        <section>
-          <section>
-            <h2>'Erryday workflow</h2>
-
-            <ul>
-              <li><a href="https://stash.big.local/projects/WEB/repos/vue-cli-plugins/">WEB/vue-cli-plugins</a></li>
-            </ul>
-
-            <aside class="notes">
-              <p>Start using them now!</p>
-              <p>As mentioned, there's endless possibilities, like...</p>
-              <p>FE: analytics, different setups per-project (loan origination, back-office, self-service, PMS)</p>
-              <p>BE: Prompt the user which/what express store to use (redis vs filestorage vs db?)</p>
-              <p>BE: Multer support</p>
+              <p>
+                Google Tag Manager provides a special data layer variable called
+                an event that is used within JavaScript event listeners to initiate
+                tag firing when a user interacts with website elements such as a
+                button. For example, you may want to fire a conversion tracking tag
+                when a user clicks the Submit button on a newsletter signup form.
+                Events may be called based on user interaction with website elements
+                such as links, buttons, components of a Flash-driven menu system, or
+                based on other JavaScript (e.g. time delays, etc.).
+              </p>
             </aside>
           </section>
         </section>
